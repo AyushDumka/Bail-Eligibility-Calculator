@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bail Eligibility Checker - Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .result-box {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            max-width: 500px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        .default-bail {
+            color: green; /* Change font color to green for default bail */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bail Eligibility Checker - Result</h1>
+
+    <!-- Result Box -->
+    <div class="result-box">
+        <p>These are the categories under which Secretary, DLSA can place the case of {{ name }} before the UTRC (Under Trial Review Committee) for Bail.</p>
+
+        <!-- Display the eligibility conditions with descriptions -->
+        <ul>
+            {% for condition in eligibility_conditions %}
+                {% if condition in ['2.2.1', '2.2.4', '2.2.7'] %}
+                    <!-- Use different class for default bail sections -->
+                    <li class="default-bail" title="This section represents default bail eligibility.">{{ condition }}
+                        {% if condition in guideline_descriptions %}
+                            - {{ guideline_descriptions[condition] }}
+                        {% endif %}
+                    </li>
+                {% else %}
+                    <li>{{ condition }}
+                        {% if condition in guideline_descriptions %}
+                            - {{ guideline_descriptions[condition] }}
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+
+        {% if bail_date %}
+         <p style="text-align: center; font-weight: bold;"> Bail Date: {{ bail_date.strftime('%Y-%m-%d') }}</p>
+        {% endif %}
+
+        {% if not eligibility_conditions %}
+            <!-- If no guidelines match -->
+            <p style="text-align: center; font-weight: bold;"> Undertrial prisoner is not eligible for bail under the 14 guidelines of the NALSA.</p>
+        {% endif %}
+    </div>
+
+    <a href="/">Back to Input</a>
+</body>
+</html>

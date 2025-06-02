@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+</head>
+
+<body>
+<label for="act">Act:</label>
+ <select name="act" id="a1">
+    <option value="">Select an option</option>
+    <option value="Gujarat Prohibition Act">Gujarat Prohibition Act</option>
+    <option value="IPC">IPC</option>
+    <option value="NDPS">NDPS</option>
+    <option value="POCSO">POCSO</option>
+ </select><br></br>
+
+<h2>Select a value:</h2>
+
+<select>
+  {% for value in column_values %}
+    <option>{{ value }}</option>
+  {% endfor %}
+</select>
+</body>
+</html>
+
+
