@@ -1,4 +1,7 @@
-# Link:- https://baileligibilitycalculator.pythonanywhere.com/
+## Link:- https://baileligibilitycalculator.pythonanywhere.com/
+
+## Parvaaz:- A curated calculator to determine bail eligibility as per the NALSA's SoP for Undertrial Review
+Committees
 
 ### STEP - 1
 The jail superintendent of every jail in the district will collate the data regarding the UTPs (Under Trial Prisoners) lodged in the jail in the format as per the requisite format and share it with the Secretary, DLSA (District Legal Services Authority), preferably in soft Excel sheet format.
@@ -13,11 +16,11 @@ The District Judge shall convene the UTRC meeting and consider the cases shortli
 ### Additional Note:
 The Secretary, DLSA shall prepare a list of eligible UTPs for consideration of UTRC.
 
-# THIS IS HOW PARVAAZ CAN HELP!
+## THIS IS HOW PARVAAZ CAN HELP!
 
-## Automation:Parvaaz can be used by the DLSA to automate eligibility from the list provided by the Superintendent, as there is no discretionary role for them in the process.
+### Automation:Parvaaz can be used by the DLSA to automate eligibility from the list provided by the Superintendent, as there is no discretionary role for them in the process.
 
-## Integration: The list prepared by the Jail Superintendent can be integrated with Parvaaz to determine eligibility, filtering eligible prisoners as per the SoP.
+### Integration: The list prepared by the Jail Superintendent can be integrated with Parvaaz to determine eligibility, filtering eligible prisoners as per the SoP.
 
-## MIS Development: A separate Management Information System (MIS) can be developed that considers the eligibility filters as per Part II of the SoP.
+### MIS Development: A separate Management Information System (MIS) can be developed that considers the eligibility filters as per Part II of the SoP.
 
