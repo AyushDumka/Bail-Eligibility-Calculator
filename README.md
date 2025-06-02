@@ -1,7 +1,6 @@
 ## Link:- https://baileligibilitycalculator.pythonanywhere.com/
 
-## Parvaaz:- A curated calculator to determine bail eligibility as per the NALSA's SoP for Undertrial Review
-Committees
+## Parvaaz:- A curated calculator to determine bail eligibility as per the NALSA's SoP for Undertrial Review Committees
 
 ### STEP - 1
 The jail superintendent of every jail in the district will collate the data regarding the UTPs (Under Trial Prisoners) lodged in the jail in the format as per the requisite format and share it with the Secretary, DLSA (District Legal Services Authority), preferably in soft Excel sheet format.
