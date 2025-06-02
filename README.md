@@ -17,7 +17,7 @@ The Secretary, DLSA shall prepare a list of eligible UTPs for consideration of U
 
 ## THIS IS HOW PARVAAZ CAN HELP!
 
-### Automation:Parvaaz can be used by the DLSA to automate eligibility from the list provided by the Superintendent, as there is no discretionary role for them in the process.
+### Automation: Parvaaz can be used by the DLSA to automate eligibility from the list provided by the Superintendent, as there is no discretionary role for them in the process.
 
 ### Integration: The list prepared by the Jail Superintendent can be integrated with Parvaaz to determine eligibility, filtering eligible prisoners as per the SoP.
 
